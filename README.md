@@ -1,4 +1,4 @@
-android_device_motorola_falcon
-==============================
+Universal device configuration for the Moto G (falcon)
+===============================
 
-Device Tree Falcon - EverVolv
+Copyright 2016 - The CyanogenMod Project

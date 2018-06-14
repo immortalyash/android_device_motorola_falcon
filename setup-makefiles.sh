@@ -1,5 +1,7 @@
-# Copyright (C) 2012 The Android Open Source Project
-# Copyright (C) 2014 The CyanogenMod Project
+#!/bin/bash
+#
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +14,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-"""Custom OTA commands for falcon devices"""
+set -e
 
-def FullOTA_InstallEnd(info):
-	info.script.AppendExtra('ifelse(is_substring("0x5", getprop("ro.boot.radio")), run_program("/sbin/sh", "-c", "busybox cp -R /system/xt1033/* /system/"));')
+# Required!
+export DEVICE=falcon
+export DEVICE_COMMON=msm8226-common
+export VENDOR=motorola
+
+export DEVICE_BRINGUP_YEAR=2013
+
+./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
