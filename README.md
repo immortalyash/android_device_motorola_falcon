@@ -11,7 +11,7 @@ Universal device configuration for the Moto G (falcon)
 # Required Repository for device
 * Device tree - https://github.com/immortalyash/android_device_motorola_falcon
 * Common device tree - https://github.com/immortalyash/android_device_motorola_msm8226-common-1
-* Kernel - https://github.com/RenanQueiroz/android_kernel_motorola_msm8226
+* Kernel - https://github.com/RenanQueiroz/android_kernel_motorola_msm8226 -b oreo-m2
 * Vendor tree - https://github.com/falcon-oreo/proprietary_vendor_motorola
 
 # Compiling from source
