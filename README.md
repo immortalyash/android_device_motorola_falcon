@@ -5,8 +5,21 @@ Universal device configuration for the Moto G (falcon)
 * Copyright (C) 2017-2018 The LineageOS Project
 
 # Working
+* Boots
+* Wifi
+* Bluetooth
+* Camera & Video Recording
+* Video Playback
+* Audio (Record and Playback)
+* Flash
+* Led
+* GPS
 
 # Not Working
+* RIL (Calls, SMS, Data)
+* HDR (Camera)
+* SELinux is permissive
+* Secure Screen Lock
 
 # Required Repository for device
 * Device tree - https://github.com/immortalyash/android_device_motorola_falcon
